@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo{
+    display: block;
+}
+
+.navContainer{
+    list-style: none;
+    display: block;
+}
+
+.navItem{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+   
+}
+
+@media only screen and (min-width: 700px) {
+    .container{
+        margin-top: 37px;
+        margin-bottom: 37px;
+    }
+}

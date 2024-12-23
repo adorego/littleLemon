@@ -1,0 +1,56 @@
+.container{
+    background-color: #333333;
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+   
+}
+
+.contentContainer{
+    padding-top: 30px;
+}
+
+.logoContainer{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linksContainer{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+}
+.contactContainer{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.socialsContainer{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.iconsContainer{
+    display: flex;
+}
+@media only screen and (min-width:700px) {
+
+    .container{
+        height: 427px;
+    }
+
+}
