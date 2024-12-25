@@ -1,0 +1,39 @@
+
+.container{
+    display: grid;
+    grid-template-areas:
+        "title image"
+        "content image"
+        "button image";
+    grid-template-columns: 2fr 1fr;
+    gap:10px;
+    background-color: var(--primary_color);
+    padding-left: 290px;
+    padding-right: 290px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    height: auto;
+}
+
+.title{
+    grid-area: title;
+    color: var(--white);
+}
+
+.content{
+    grid-area: content;
+    color: var(--white);
+}
+
+.image{
+    grid-area: image;
+}
+
+.callToActionbutton{
+    grid-area: button;
+    background-color: var(--secondary_color);
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+
+}

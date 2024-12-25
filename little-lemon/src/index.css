@@ -31,20 +31,48 @@
 
 :root{
   --white:#EDEFEE;
+  --foregrond:#333333;
+  --primary_color:#495E57;
+  --secondary_color:#F4CE14;
 }
 
 html, body{
   font-family: Karla_regular;
 }
 
+h1{
+  font-family: MarkaziText_medium;
+  font-size: 64px;
+}
+h2{
+  font-family: MarkaziText_regular;
+  font-size: 40px;
+}
+
+.descriptive_text{
+  font-family: Karla_medium;
+  font-size: 18px;
+}
+.section_header{
+  font-family: Karla_extraBold;
+  font-size: 20px;
+}
 .section_category{
   font-family: Karla_extraBold;
   font-size: 16px;
 
 }
+.card_title{
+  font-family: Karla_bold;
+  font-size: 18px;
+}
 
 .highlight_text{
   font-family: Karla_bold;
+  font-size: 16px;
+}
+p{
+  font-family: Karla_regular;
   font-size: 16px;
 }
 
