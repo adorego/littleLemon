@@ -8,8 +8,6 @@
     grid-template-columns: 2fr 1fr;
     gap:10px;
     background-color: var(--primary_color);
-    padding-left: 290px;
-    padding-right: 290px;
     padding-top: 47px;
     padding-bottom: 47px;
     height: auto;
@@ -36,4 +34,26 @@
     height: 60px;
     border-radius: 16px;
 
+}
+.callToActionbutton:hover{
+    background-color: var(--third_color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--black);
+}
+
+@media only screen and (min-width:701px) {
+    .container{
+       padding-left: 15%;
+       padding-right: 15%;
+
+    }
+    .content{
+        width: 422px;
+    }
+    
 }

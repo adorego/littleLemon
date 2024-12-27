@@ -1,0 +1,51 @@
+.container{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "title callToAction"
+    "cards cards";
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+}
+
+.mainTitlContainer{
+    grid-area: title;
+    
+   
+}
+
+.callToActionButtonContainer{
+    grid-area: callToAction;
+    justify-self: end;
+   
+}
+.callToActionButton{
+    background-color: var(--secondary_color);
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+   
+}
+.cardsContainer{
+    grid-area: cards;
+    
+}
+.dishContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5vw;
+    
+}
+
+@media only screen and (min-width:701px){
+    .container{
+        width: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

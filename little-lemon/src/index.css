@@ -34,6 +34,10 @@
   --foregrond:#333333;
   --primary_color:#495E57;
   --secondary_color:#F4CE14;
+  --third_color:#EE9972;
+  --third_color_variant_1:#FBDABB;
+  --third_color_variant_2:#FBDABB;
+
 }
 
 html, body{

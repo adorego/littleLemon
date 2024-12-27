@@ -1,0 +1,29 @@
+
+.container{
+    width: 265px;
+    height: 439px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border:2px solid var(--primary_color);
+    border-radius: 16px;
+    padding: 5px;
+}
+.titleSection{
+     width: 100%;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.title{
+    /* border: 2px solid blue; */
+}
+
+.price{
+    /* border: 2px solid orange; */
+}
