@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Specials from "./Specials";
 import Footer from "./Footer";
 
+
 const HomePage = ()=>{
     return(
         <>
@@ -10,6 +11,8 @@ const HomePage = ()=>{
             <Hero />
             <Specials />
             <Footer />
+           
+            
 
         </>
     )

@@ -7,12 +7,14 @@
     "cards cards";
     justify-content: space-around;
     align-items: center;
+    grid-template-columns: 200px 1fr;
+    
     
     
     
 }
 
-.mainTitlContainer{
+.mainTitleContainer{
     grid-area: title;
     
    
@@ -21,6 +23,7 @@
 .callToActionButtonContainer{
     grid-area: callToAction;
     justify-self: end;
+   
    
 }
 .callToActionButton{
@@ -32,6 +35,7 @@
 }
 .cardsContainer{
     grid-area: cards;
+   
     
 }
 .dishContainer{
@@ -45,7 +49,7 @@
 @media only screen and (min-width:701px){
     .container{
         width: auto;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15vw;
+        padding-right: 15vw;
     }
 }
