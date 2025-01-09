@@ -2,55 +2,66 @@
     background-color: #333333;
     color: var(--white);
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   
-   
-}
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-.contentContainer{
-    padding-top: 30px;
-}
-
-.logoContainer{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.linksContainer{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0px;
-}
-.contactContainer{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.socialsContainer{
-    width: 200px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     
+   
+   
 }
-.iconsContainer{
-    display: flex;
+
+.link{
+    color: var(--white);
+}
+
+
+@media only screen and (max-width:699px) {
+    .container{
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align: center;
+    }
+    .logoContainer{
+        
+        margin-bottom: 10px;
+    }
+    .contentContainer,.contactContainer{
+        margin-top: 10px;
+    }
+    .linksContainer,.contactContainer,.socialsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .iconsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 @media only screen and (min-width:700px) {
 
     .container{
-        height: 427px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+    }
+    .linksContainer,.contactContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .iconsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
 
 }

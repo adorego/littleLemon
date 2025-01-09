@@ -1,33 +1,111 @@
 .container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.logo{
+.sideBar{
+    padding-left: 10px;
+    padding-top: 30px;
     display: block;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: lightgray;
+    color: var(--foreground);
+
 }
 
-.navContainer{
-    list-style: none;
-    display: block;
-}
-
-.navItem{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
-   
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width:399px) {
     .container{
-        margin-top: 37px;
-        margin-bottom: 37px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8px;
+        padding-right: 8px;
         
+        
+    }
+    .navContainerMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .menuIcon{
+        display: block;
+        width: 48px;
+        height: 48px;
+    }
+    .sideBar{
+        display: block;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: lightgray;
+        color: var(--foreground);
+
+    }
+    .navContainer{
+        display: none;
+    }
+
+    .navItem{
+        display: block;
+       
+
+    }
+    
+}
+
+
+@media only screen and (min-width:400px) and (max-width: 1199px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .navContainer{
+        list-style: none;
+        display: none;
+    }
+    .navItem{
+        display: inline-block;
+    }
+    .navContainerMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        
+    }
+    .navContainer{
+        list-style: none;
+    }
+    .navItem{
+        display: inline-block;
+        margin-left: 10px;
+        
+    }
+    .menuIcon{
+        display: none;
     }
 }

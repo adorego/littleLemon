@@ -1,37 +1,47 @@
 .container{
-    
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "title callToAction"
-    "cards cards";
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 200px 1fr;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
     
     
     
     
 }
 
-.mainTitleContainer{
-    grid-area: title;
-    
+.cardsContainer{
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    margin-top: 30px;
    
 }
 
-.callToActionButtonContainer{
-    grid-area: callToAction;
-    justify-self: end;
-   
-   
+.headerContainer{
+    display: flex;
+    
+    
 }
+
 .callToActionButton{
     background-color: var(--secondary_color);
     width: 200px;
     height: 60px;
     border-radius: 16px;
    
+}
+
+.callToActionButton:hover{
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
 }
 .cardsContainer{
     grid-area: cards;
@@ -46,10 +56,45 @@
     
 }
 
-@media only screen and (min-width:701px){
+@media only screen and (max-width:593px) {
     .container{
-        width: auto;
-        padding-left: 15vw;
-        padding-right: 15vw;
+       
+    }
+    .headerContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (min-width:594px) and (max-width:700px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .headerContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+        
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width:701px) {
+    .container{
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .headerContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+        
+        margin-bottom: 30px;
     }
 }

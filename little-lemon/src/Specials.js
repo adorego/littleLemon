@@ -33,19 +33,22 @@ const specials = [
 const Specials = ()=>{
     return(
         <section className={style.container}>
-            <div className={style.mainTitleContainer}>
-                <h1 className={style.mainTitle}>Specials</h1>
-            </div>
-            
-            <div className={style.callToActionButtonContainer}>
-            <button className={style.callToActionButton}><Link className={style.link} to="/booking">Reserve a table</Link></button>
+            <div className={style.headerContainer}>
+                <div className={style.mainTitleContainer}>
+                    <h1 className={style.mainTitle}>Specials</h1>
+                </div>
+                
+                <div className={style.callToActionButtonContainer}>
+                    <button className={style.callToActionButton}><Link className={style.link} to="/booking">Reserve a table</Link></button>
+                </div>
             </div>
             
             <div className={style.cardsContainer}>
                     <div className={style.dishContainer}>
                         {specials.map(
-                            (dish)=>{
+                            (dish,index)=>{
                                 return <Card 
+                                    key={`${dish}-${index}`}
                                     imgSrc={dish.imgSrc} 
                                     alt={dish.alt} 
                                     title={dish.title} 

@@ -1,59 +1,175 @@
-
 .container{
     display: grid;
-    grid-template-areas:
-        "title image"
-        "content image"
-        "button image";
-    grid-template-columns: 2fr 1fr;
-    gap:10px;
-    background-color: var(--primary_color);
-    padding-top: 47px;
-    padding-bottom: 47px;
+    width: 100vw;
     height: auto;
-}
+    background-color: var(--primary_color);
+    
+    
+    
 
-.title{
-    grid-area: title;
-    color: var(--white);
-}
-
-.content{
-    grid-area: content;
-    color: var(--white);
-}
-
-.image{
-    grid-area: image;
 }
 
 .callToActionbutton{
-    grid-area: button;
-    background-color: var(--secondary_color);
     width: 200px;
     height: 60px;
+    background-color: var(--secondary_color);
     border-radius: 16px;
-
+    
+    
 }
-.callToActionbutton:hover{
-    background-color: var(--third_color);
-    color: var(--white);
-    cursor: pointer;
-}
-
 .link{
     text-decoration: none;
-    color: var(--black);
+}
+
+.itemTitle,.itemTitle2,.itemParragraph{
+    color: var(--white);
+ }
+
+@media only screen and (max-width:593px) {
+    .container{
+        grid-template-columns:100%;
+        grid-template-rows: 77px 77px auto auto auto;
+        gap:10px;
+        justify-items: center;
+        height: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+       
+    
+    }
+
+    .itemParragraph{
+        text-align: center;
+        justify-self: stretch;
+    }
+
+    .itemImage{
+        place-self: center;
+    }
+
+    .title{
+       
+    }
+
+    .image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px;
+    }
+
+    .imageDesktop{
+        display: none;
+    }
+
+    .itemButton{
+        place-self: center;
+    }
+
+}
+
+@media only screen and (min-width:594px) and (max-width:700px){
+    .container{
+        grid-template-columns:50% 50%;
+        grid-template-rows: 77px 77px auto auto ;
+        column-gap: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .itemTitle{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .itemTitle2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .itemParragraph{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .itemImage{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .itemButton{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .imageDesktop{
+        display: none;
+    }
+    
 }
 
 @media only screen and (min-width:701px) {
     .container{
-       padding-left: 15%;
-       padding-right: 15%;
-
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto 77px 77px 77px ;
+        column-gap: 10px;
+        row-gap: 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
-    .content{
-        width: 422px;
+    .itemTitle{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .itemTitle2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .itemParragraph{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .itemImage{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        place-self: center;
+    }
+    .itemButton{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .image{
+        display: none;
+    }
+    .imageDesktop{
+        width: 401px;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px;
     }
     
 }
+

@@ -1,13 +1,15 @@
 
 .container{
-    width: 265px;
-    height: 439px;
+    width: 190px;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap:10px;
     border:2px solid var(--primary_color);
     border-radius: 16px;
     padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 .titleSection{
      width: 100%;
@@ -26,4 +28,11 @@
 
 .price{
     /* border: 2px solid orange; */
+}
+
+@media only screen and (max-width:399px) {
+    .image{
+        width: 180px;
+        height: 140px;
+    }
 }

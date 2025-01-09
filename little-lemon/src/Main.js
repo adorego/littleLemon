@@ -3,7 +3,6 @@ import BookingForm from "./BookingForm";
 import { fetchAPI,submitAPI } from "./api/api";
 import { useNavigate } from "react-router-dom";
 
-//const initialAvailableTimes = [" ","17:00","18:00","19:00","20:00","21:00","22:00"];
 
 export const initializeTimes = (date)=>{
     const result  = fetchAPI(date);
@@ -22,7 +21,7 @@ const Main = (props)=>{
     const navigate = useNavigate();
 
     const submitForm = (formData)=>{
-        console.log("Data to submit:", formData);
+        console.log("FormData:",formData);
         const result = submitAPI(formData);
         if(result){
             navigate("/booking/confirmed")
